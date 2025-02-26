@@ -1,12 +1,10 @@
-# نرم افزار مدیریت پسورد تحت CLI
-این نرم افزار با دریافت شماره موبایل از طریق سامانه sms.ir یک کد 5 رقمی ارسال میکند، در صورتی که کاربر کد را بدرستی وارد کند از طریق وبکم به کمک کتابخانه opencv تصویر کاربر در فولدر storage و زیر فولدری با مقدار شماره موبایل کاربر ذخیره میگردد.
-دیتابیس بکار رفته در این پروژه MySQL میباشد لذا اطلاعات لازم برای اتصال را در فایل database.py وارد نمایید.
+This software sends a 5-digit code by receiving a mobile number through the sms.ir system. If the user enters the code correctly, the user's image is captured via webcam using the OpenCV library and stored in the "storage" folder, within a subfolder named after the user's mobile number. The database used in this project is MySQL, so enter the necessary connection information in the "database.py" file.
 
-برای ارسال sms میبایست در فایل Notifier.py کلید API و شماره خط دریافتی از سامانه sms.ir را وارد کنید.
+To send SMS messages, you must enter the API key and line number received from the sms.ir system in the "Notifier.py" file.
 
-توجه نمایید که تمامی پسورد ها در دیتابیس با رمزنگاری نگهداری میشوند و کلید رمزنگاری در فایل key.key ذخیره میشود، لذا پس از راه اندازی پروژه در حفظ و نگهداری از این کلید دقت کافی داشته باشید.
+Note that all passwords in the database are stored encrypted, and the encryption key is stored in the "key.key" file. Therefore, after setting up the project, take great care in maintaining and protecting this key.
 
-همچنین تمامی فعالیت ها توسط فایل Logger.py در فایلی با نام activity.log به شکل رخداد ذخیره میشوند.
+Also, all activities are stored as events in a file named "activity.log" using the "Logger.py" file.
 
-ضمنا در این پروژه از کل عملیات CRUD استفاده شده است.
+Additionally, this project utilizes all CRUD operations.
 
