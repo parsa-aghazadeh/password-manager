@@ -6,5 +6,5 @@ Note that all passwords in the database are stored encrypted, and the encryption
 
 Also, all activities are stored as events in a file named "activity.log" using the "Logger.py" file.
 
-Additionally, this project utilizes all CRUD operations
+Additionally, this project utilizes all CRUD operations.
 
